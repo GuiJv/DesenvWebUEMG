@@ -156,6 +156,9 @@ button{
 .main_info img{
   width: 15%;
 }
+.container{
+  visibility: hidden;
+}
 
 
 @media only screen and (max-width: 600px){
@@ -176,5 +179,63 @@ button{
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 70%;
+    
   }
+}
+@media only screen and (max-width: 990px){
+
+  .container{
+    visibility: visible;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    padding-left: 100px;
+    position: fixed;
+    top: 200px;
+    left: 80%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .pc{
+    visibility: hidden;
+  }
+
+}
+
+
+
+
+.phone_menu{
+  cursor: pointer;
+}
+
+.frame1{
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.frame1 .info{
+  border-bottom: 1px solid white;
+  padding: 20px !important ;
+  display: block;
+}
+
+.dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  margin-top: 4px;
+}
+
+.style{
+  width: 200px;
+  height: 300px;
+  background-color: #9bc7e5;
+  margin-top: 5px;
+  margin-left: -180px;
+  border-radius: 10px;
+  z-index: 5;
 }
