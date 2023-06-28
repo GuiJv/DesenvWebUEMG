@@ -1,69 +1,107 @@
+
 *{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Roboto', sans-serif;
+
+
 }
 
-#logo{
-    width: 189px;
-    padding: 10px 15px;
-    float: left;
+html{
+  background-color: whitesmoke;
 }
 
 .topmenu {
-    position: absolute;
-    top:0;
-    right:0;
+    position: fixed;
+    top:0%;
+    right:0%;
     background-color:#d3e0e9;
     width: 100% ;
-    height: 122px;
+    height: 150px;
     overflow: hidden;
+    font-size: 10px;
+    z-index: 2;
+    display: inline-block;
+}
+.topmenu img {
+  width: 200px;
+  float: left;
+  padding: 5px;
 }
 
 .topmenu a {
     float: left;
-    color:#0837f5;
+    color:#2454ac;
     text-align: center;
-    padding: 14px 16px;
+    padding: 50px;
     text-decoration: none;
     font-size: 20px;
-    padding: 45px 50px;
   }
-  
-  /* Change the color of links on hover */
+
+.topmenu input[type=text] {
+    text-align: center;
+    float: left;
+    padding: 20px;
+    border: none;
+    margin: 40px;
+    font-size: 17px;
+    width: 200px;
+    height: 10px;
+    vertical-align: middle;
+  }
+
   .topmenu a:hover {
     color: black;
   }
   
-  /* Add a color to the active/current link */
   .topmenu a.active {
     background-color: #04AA6D;
     color: white;
   }
   #login{
-    padding: 45px 55px;
+    padding: 55px;
     float: right;
     text-align: center;
   }
   #suporte{
-    padding: 45px 55px;
+    padding: 55px;
     float: right;
     text-align: center;
   }
 
-  .login{
-    padding: 300px 600px;
+  .login_div{
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 40%;
+    padding: 20px;
   }
 
+
+  .email_form{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+
 .apoitments_group, .main_info {
-  top: 50%;
+  top: 70%;
   left: 50%;
-  width: 80%;
+  bottom: 100%;
+  transform: translate(-50%, -50%);
+  width: 78%;
   height: 80%;
-  margin-top: -10%;
-  margin-left: -40%;
-  border: 1px #050505;
-  background-color: #ffffff;
-  position: fixed;
-  border-style: solid;
+  background-color: whitesmoke;
+  position: absolute;
+  z-index: 1;
+  padding: 0%;
+  margin: 0px;
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .apoitments_group div{
@@ -74,9 +112,8 @@
   display: block;
   width: 250px;
   text-align: center;
-  border: 3px #666;
-  margin-left: 8em;
-  margin-top: 70px;
+  border: 3px  whitesmoke;
+  margin: 6px;
   border-style: solid;
   border-radius: 5px;
   
@@ -90,6 +127,7 @@
   margin-top: 10px;
   border-style: solid;
   border-radius: 5px;
+  background-color: white;
 }
 
 .apoitments_group div h1{
@@ -106,11 +144,98 @@ input{
 }
 
 button{
-  background-color: #bbc6ce;
+  background-color: #2454ac;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
   width: 100%;
+}
+
+.main_info img{
+  width: 15%;
+}
+.container{
+  visibility: hidden;
+}
+
+
+@media only screen and (max-width: 600px){
+  .login_div{
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 60%;
+    padding: 20px;
+  }
+
+  .email_form{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 70%;
+    
+  }
+}
+@media only screen and (max-width: 990px){
+
+  .container{
+    visibility: visible;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    padding-left: 100px;
+    position: fixed;
+    top: 200px;
+    left: 80%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .pc{
+    visibility: hidden;
+  }
+
+}
+
+
+
+
+.phone_menu{
+  cursor: pointer;
+}
+
+.frame1{
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.frame1 .info{
+  border-bottom: 1px solid white;
+  padding: 20px !important ;
+  display: block;
+}
+
+.dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  margin-top: 4px;
+}
+
+.style{
+  width: 200px;
+  height: 300px;
+  background-color: #9bc7e5;
+  margin-top: 5px;
+  margin-left: -180px;
+  border-radius: 10px;
+  z-index: 5;
 }
