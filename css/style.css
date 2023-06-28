@@ -1,12 +1,12 @@
 
 *{
-    font-family: Helvetica, Arial,sans-serif;
+  font-family: 'Roboto', sans-serif;
+
+
 }
 
-#logo{
-    width: 100%;
-    padding: 1% 1%;
-    float: left;
+html{
+  background-color: whitesmoke;
 }
 
 .topmenu {
@@ -15,85 +15,93 @@
     right:0%;
     background-color:#d3e0e9;
     width: 100% ;
-    height: 17%;
+    height: 150px;
     overflow: hidden;
-    font-size: 10vw;
+    font-size: 10px;
     z-index: 2;
     display: inline-block;
 }
 .topmenu img {
-  width: 13%;
+  width: 200px;
   float: left;
+  padding: 5px;
 }
+
 .topmenu a {
     float: left;
     color:#2454ac;
     text-align: center;
-    padding: 14px 16px;
+    padding: 50px;
     text-decoration: none;
-    font-size: 1.3vw;
-    padding: 45px 50px;
+    font-size: 20px;
   }
 
 .topmenu input[type=text] {
     text-align: center;
     float: left;
-    padding: 45px 50px;
+    padding: 20px;
     border: none;
-    margin-right: 16px;
+    margin: 40px;
     font-size: 17px;
-    width: 15%;
-    height: 2%;
+    width: 200px;
+    height: 10px;
+    vertical-align: middle;
   }
 
-  /* Change the color of links on hover */
   .topmenu a:hover {
     color: black;
   }
   
-  /* Add a color to the active/current link */
   .topmenu a.active {
     background-color: #04AA6D;
     color: white;
   }
   #login{
-    padding: 45px 55px;
+    padding: 55px;
     float: right;
     text-align: center;
   }
   #suporte{
-    padding: 45px 55px;
+    padding: 55px;
     float: right;
     text-align: center;
   }
 
   .login_div{
-    
-    top: 50%;
-    right: 50%;
-    width: 300px;
-    transform: translate(100%, 100%);
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 40%;
+    padding: 20px;
   }
 
+
   .email_form{
-    padding: 200px 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 
 
 .apoitments_group, .main_info {
-  top: 60%;
+  top: 70%;
   left: 50%;
   bottom: 100%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 78%;
   height: 80%;
-  background-color: #ffffff;
+  background-color: whitesmoke;
   position: absolute;
   z-index: 1;
-  padding-top: 10%;
-  padding-right: 0%;
-  padding-bottom: 5%;
-  padding-left: 0%;
+  padding: 0%;
+  margin: 0px;
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .apoitments_group div{
@@ -104,9 +112,8 @@
   display: block;
   width: 250px;
   text-align: center;
-  border: 3px #666;
-  margin-left: 10%;
-  margin-bottom: 5%;
+  border: 3px  whitesmoke;
+  margin: 6px;
   border-style: solid;
   border-radius: 5px;
   
@@ -120,6 +127,7 @@
   margin-top: 10px;
   border-style: solid;
   border-radius: 5px;
+  background-color: white;
 }
 
 .apoitments_group div h1{
@@ -147,4 +155,87 @@ button{
 
 .main_info img{
   width: 15%;
+}
+.container{
+  visibility: hidden;
+}
+
+
+@media only screen and (max-width: 600px){
+  .login_div{
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 60%;
+    padding: 20px;
+  }
+
+  .email_form{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 70%;
+    
+  }
+}
+@media only screen and (max-width: 990px){
+
+  .container{
+    visibility: visible;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    padding-left: 100px;
+    position: fixed;
+    top: 200px;
+    left: 80%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .pc{
+    visibility: hidden;
+  }
+
+}
+
+
+
+
+.phone_menu{
+  cursor: pointer;
+}
+
+.frame1{
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.frame1 .info{
+  border-bottom: 1px solid white;
+  padding: 20px !important ;
+  display: block;
+}
+
+.dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  margin-top: 4px;
+}
+
+.style{
+  width: 200px;
+  height: 300px;
+  background-color: #9bc7e5;
+  margin-top: 5px;
+  margin-left: -180px;
+  border-radius: 10px;
+  z-index: 5;
 }

@@ -9,12 +9,29 @@
 </head>
 <body> 
     <div class="topmenu">
-        <img src="./img/logo.png">
-        <a href="index.html">Inicio</a>
-        <a>Pesquisa</a>
-        <input type="text" placeholder="Search..">
-        <a id="suporte" href="./login/suporte.html">Suporte</a>
-        <a id="login" href="./login/login.html">Entrar</a>
+        <nav> 
+            <img src="./img/logo.png">  
+            <div class = "pc">
+            <a href="index.html">Inicio</a>
+            <input type="text" placeholder="Pesquisar">
+            <a id="suporte" href="./login/suporte.html">Suporte</a>
+            <a id="login" href="./login/login.html">Entrar</a>
+            </div> 
+            <div class="container">
+                <div class="phone_menu" onclick="scrollDown()">
+                    <div class="dot" id="1"></div>
+                    <div class="dot" id="2" ></div>
+                    <div class="dot" id="3"></div>
+                </div>
+                <div class="frame1" id="frame1">
+                    <a class = "info" href="index.html">Inicio</a>
+                    <a class = "info" id="suporte" href="./login/suporte.html">Suporte</a>
+                    <a class = "info" id="login" href="./login/login.html">Entrar</a>
+                    <a class = "info" onclick=unscroll()>Fechar</a>
+                </div>
+               
+            </div>   
+        </nav>
     </div>
     <div class="apoitments_group">
         <div class="apoitment">
@@ -38,8 +55,37 @@
         <div class="apoitment">
             <img src="./img/implante.png">
             <br>
-            <h1>Git Test</h1>
-        </div>          
+            <h1>Implante</h1>
+            <p>Agende um Implante</p>
+        </div>
+        <div class="apoitment">
+            <img src="./img/implante.png">
+            <br>
+            <h1>Implante</h1>
+            <p>Agende um <a href="consultas/implante.html">implante</a></p>
+        </div>
+        <div class="apoitment">
+            <img src="./img/implante.png">
+            <br>
+            <h1>Implante</h1>
+            <p>Agende um <a href="consultas/implante.html">implante</a></p>
+        </div>
+        <div class="apoitment">
+            <img src="./img/implante.png">
+            <br>
+            <h1>Implante</h1>
+            <p>Agende um <a href="consultas/implante.html">implante</a></p>
+        </div>     
+        <div class="apoitment">
+            <img src="./img/implante.png">
+            <br>
+            <h1>Implante</h1>
+            <p>Agende um <a href="consultas/implante.html">implante</a></p>
+        </div>       
     </div>
+    <script src="./js/script.js"></script>
+    <footer>
+
+    </footer>
 </body>
 </html>
