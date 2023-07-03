@@ -21,4 +21,23 @@ A página de cadastro, acessada pelo *Cadastrar-se*, contém um formulário para
 ## Estrutura do Projeto
 
 O projeto conta com a página principal como `index.html` e os diretórios, `css` que conta com o arquivo `style.css` que estiliza a página, `img` que contem os arquivos
-de imagens da página, `js` que conta com o arquivo `script.js` que 
+de imagens da página, `js` que conta com o arquivo `script.js` que dinamiza a página, `login` que contem os arquivos html relacionados a login e a suporte, `consultas` que contem os arquivos html relacionados a cada página específica.
+
+Estrutra do diretório do projeto:
+
+###DevWeb
+|_ index.html
+|_ consultas
+| | _ consulta_geral.html
+| | _ etc.html
+|_ login
+| | _ login.html
+| | _ etc.html
+|_ css
+| | _ style.css
+|_ js
+| |_ script.js
+|_ img
+  |_ img.png
+
+  
