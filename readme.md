@@ -20,24 +20,35 @@ A página de cadastro, acessada pelo *Cadastrar-se*, contém um formulário para
 
 ## Estrutura do Projeto
 
-O projeto conta com a página principal como `index.html` e os diretórios, `css` que conta com o arquivo `style.css` que estiliza a página, `img` que contem os arquivos
-de imagens da página, `js` que conta com o arquivo `script.js` que dinamiza a página, `login` que contem os arquivos html relacionados a login e a suporte, `consultas` que contem os arquivos html relacionados a cada página específica.
+O projeto conta com a página principal como `index.html` e os diretórios, `consultas` que contem os arquivos html relacionados a cada página específica, `login` que contem os arquivos html relacionados a login e a suporte, `css` que conta com o arquivo `style.css` que estiliza a página, , `js` que conta com o arquivo `script.js` que dinamiza a página, `img` que contem os arquivos de imagens da página.
 
 Estrutra do diretório do projeto:
 
-###DevWeb
-|_ index.html
-|_ consultas
-| | _ consulta_geral.html
-| | _ etc.html
-|_ login
-| | _ login.html
-| | _ etc.html
-|_ css
-| | _ style.css
-|_ js
-| |_ script.js
-|_ img
-  |_ img.png
+### DevWeb  
+├ index.html  
+├─ consultas  
+│└─consulta_geral.html  
+│└─ etc.html  
+├─ login  
+│ └─login.html  
+│ └─etc.html  
+├─  css  
+│ └─style.css  
+├─ js  
+│ └─ script.js  
+├─ img  
+│  └─img.png  
+
+## Objetivos do Projeto
+O objetivo deste projeto é construir um website utilizando HTML, CSS e Java Script, com o fim de fazer uma página de agendamento de consultas médicas de fácil leitura e entendimento, para agilizar essa atividade que pode consumir tempo desnecessário. Também é objetivo do site desenvolver o aprendizado da aula de Desenvolvimento Web do
+primeiro semestre de sistemas de informação.
+
+## Contribuição
+Os desenvolvedores aceitam quaisquer contribuições para aprimorar o projeto ou corrigir bugs, visto que a inteção inicial é aprender o desenvolvimento de websites.
+
+## Contato
+guilhermejosevinhas@gmail.com   
+guilhermerp2004@gmail.com  
+jvmirandaoliveira14@gmail.com  
 
   
