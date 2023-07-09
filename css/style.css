@@ -60,6 +60,11 @@ html{
     padding: 55px;
     float: right;
     text-align: center;
+    border: none;
+    outline: none;
+    font-size: 2em;
+    color: blue;
+
   }
   #suporte{
     padding: 55px;
@@ -75,7 +80,9 @@ html{
     transform: translate(-50%, -50%);
     width: 40%;
     padding: 20px;
+    
   }
+
 
 
   .email_form{

@@ -36,20 +36,30 @@
 
     <div class="login_div">
         <form action="login.html" method="post">
-            <label for="username"><b>Nome de Usuário</b></label>
-            <br>
-            <input type="text" placeholder="Digite o nome de usuário" name="username" required>
-            <br>
-            <label for="password"><b>Senha</b></label>
-            <br>
-            <input type="password" placeholder="Digite a senha" name="password" required>
-            <br>
-            <button type="submit">Entrar</button>
-            <br>
-
-        </form>
-        <a href="./forgot_password.html">Esqueceu a senha?</a><br>
-        <a href="./register.html">Cadastrar-se</a>
+                <div class="form-box">
+                    <form class="">
+                        <h2>Login</h2>
+                        <div class="inputbox">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <label for="">Email</label>
+                            <input type="email" required>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <label for="">Senha</label>
+                            <input type="password" required>
+                        </div>
+                        <div class="forget">
+                            <a href="./forgot_password.html">Esqueceu a senha?</a></label>               
+                        </div>
+                        <button>Log in</button>
+                        <div class="register">
+                            <p>Não possui uma conta? <a href="./register.html">Registre-se agora</a></p>
+                        </div>
+                    </form>
+                </div>
+            </form>
+            <div>
     </div>
     <script src="../js/script.js"></script>
 </body>
